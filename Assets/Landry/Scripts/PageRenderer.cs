@@ -14,7 +14,7 @@ public class PageRenderer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetAnimationSpeed(130);
+        SetAnimationSpeed(142);
         // Wait for 5 seconds
         // And then change the animation speed to 60 bpm
         StartCoroutine(WaitAndDoSomething());
@@ -26,17 +26,15 @@ public class PageRenderer : MonoBehaviour
         yield return new WaitForSeconds(5);
 
         // Faire quelque chose après l'attente
-        SetAnimationSpeed(60);
+        // SetAnimationSpeed(60);
     }
 
-    // Set animation speed from bpm. 60 bpm = 1 page per second
+    // Set animation speed from bpm. The animation is on 1 second for 1 page turned
     void SetAnimationSpeed(int bpm)
     {
-        // Get animation component
-        Animation animation = GetComponent<Animation>();
-
-        // Set animation speed
-        animation["PageFlip"].speed = bpm / 60f;
+        Animator animator = GetComponent<Animator>();
+        // Set animation speed parameter
+        animator.SetFloat("pageTurnSpeed", bpm / 60f / 4f);
     }
 
     // Turn page by changing texture
