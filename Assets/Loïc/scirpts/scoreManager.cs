@@ -38,8 +38,11 @@ public void AddPoint(float scoreToAdd)
         if(score > 0)
         {
             score = score - (1f * Time.deltaTime * 10) ;
-            scoreText.text = score.ToString() + " POINTS";
         }
-        
+        else
+        {
+            score = 0;
+        }
+        scoreText.text = score.ToString() + " POINTS";
     }
 }
