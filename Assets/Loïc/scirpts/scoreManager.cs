@@ -11,7 +11,7 @@ public class scoreManager : MonoBehaviour
     public Text scoreText;
     public Text highscoreText;
 
-    float score = 100;
+    float score = 0;
     int highscore = 0;
 
     private void Awake()
