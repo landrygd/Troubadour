@@ -40,17 +40,6 @@ public class InputsReader : MonoBehaviour
     }
 
 
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-
-    }
-
     ///     FUNCTIONS 
     
     public void RightHand(InputAction.CallbackContext context)
