@@ -246,4 +246,11 @@ AnimationClip:
     flags: 0
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: OnTurnPage
+    data: 
+    objectReferenceParameter: {fileID: 102900000, guid: 251716609f634449bfe8ce75c0ed78fe, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
