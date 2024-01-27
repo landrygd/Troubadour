@@ -9,7 +9,7 @@ public class PageRenderer : MonoBehaviour
     [SerializeField]
     public List<Texture> textures = new List<Texture>();
     // Renderer
-    public Renderer renderer;
+    public Renderer rendererr;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +48,7 @@ public class PageRenderer : MonoBehaviour
         Texture randomTexture = textures[randomTextureIndex];
 
         // Set texture
-        renderer.material.mainTexture = randomTexture;
+        rendererr.material.mainTexture = randomTexture;
     }
 
     // Update is called once per frame

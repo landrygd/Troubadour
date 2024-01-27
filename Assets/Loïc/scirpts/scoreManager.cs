@@ -37,7 +37,7 @@ public void AddPoint()
     {
         if(score > 0)
         {
-            score = score - (1f * Time.deltaTime * 5);
+            score = score - (1f * Time.deltaTime * 10) ;
             scoreText.text = score.ToString() + " POINTS";
         }
         
