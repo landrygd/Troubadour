@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class scoreManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class scoreManager : MonoBehaviour
     public Text scoreText;
     public Text highscoreText;
 
-    float score = 0;
+    float score = 10;
     int highscore = 0;
 
     private void Awake()
@@ -37,11 +38,11 @@ public void AddPoint(float scoreToAdd)
     {
         if(score > 0)
         {
-            score = score - (1f * Time.deltaTime * 10) ;
+            score = score - (1f * Time.deltaTime * 10);
         }
         else
         {
-            score = 0;
+            SceneManager.LoadScene("game over");
             Debug.Log("Tu a perdu...");
         }
         scoreText.text = score.ToString() + " POINTS";
