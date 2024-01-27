@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class scoreManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class scoreManager : MonoBehaviour
     public Text scoreText;
     public Text highscoreText;
 
-    int score = 0;
+    float score = 0;
     int highscore = 0;
 
     private void Awake()
@@ -26,9 +27,19 @@ void Start()
 
 public void AddPoint()
     {
-        score += 1;
+        score += 2;
         scoreText.text = score.ToString() + " POINTS";
         if (highscore < score)
-            PlayerPrefs.SetInt("highscore", score);
+            PlayerPrefs.SetFloat("highscore", score);
+    }
+
+    private void Update()
+    {
+        if(score > 0)
+        {
+            score = score - (1f * Time.deltaTime * 5);
+            scoreText.text = score.ToString() + " POINTS";
+        }
+        
     }
 }
