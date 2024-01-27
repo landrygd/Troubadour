@@ -25,9 +25,9 @@ void Start()
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();
     }
 
-public void AddPoint()
+public void AddPoint(float scoreToAdd)
     {
-        score += 2;
+        score += scoreToAdd;
         scoreText.text = score.ToString() + " POINTS";
         if (highscore < score)
             PlayerPrefs.SetFloat("highscore", score);
