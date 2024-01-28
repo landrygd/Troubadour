@@ -13,6 +13,6 @@ public class mainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Loïc");
+        SceneManager.LoadScene("MainScene");
     }
 }
