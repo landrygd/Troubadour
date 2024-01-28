@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Lo\xEFc.unity"
     guid: 3346cafbfec0bd345a12f80166fdbf0f
+  - enabled: 1
+    path: "Assets/Lo\xEFc/game over.unity"
+    guid: 82c076ef0af95014f91295902da30363
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8b3b96c1091790741b7a2938e9171015, type: 2}
