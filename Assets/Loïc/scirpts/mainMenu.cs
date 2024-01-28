@@ -25,4 +25,10 @@ public class mainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void StartTuto()
+    {
+        SceneManager.LoadScene("Tuto");
+    }
 }
+
