@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164fc7dcc007f6f4bbf860b5b91ca2c3, type: 3}
-  m_Name: Data
+  m_Name: pose 4
   m_EditorClassIdentifier: 
-  _rightHand: 1
-  _leftHand: 1
-  _rightLeg: 0
+  _rightHand: 0
+  _leftHand: 0
+  _rightLeg: 1
   _leftLeg: 0
   _rightHandVector: {x: 0, y: 0, z: 0}
   _leftHandVector: {x: 0, y: 0, z: 0}

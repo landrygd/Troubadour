@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164fc7dcc007f6f4bbf860b5b91ca2c3, type: 3}
+  m_Name: pose 1
+  m_EditorClassIdentifier: 
+  _rightHand: 0
+  _leftHand: 0
+  _rightLeg: 0
+  _leftLeg: 0
+  _rightHandVector: {x: 0, y: 0, z: 0}
+  _leftHandVector: {x: 0, y: 0, z: 0}
+  _rightLegVector: {x: 0, y: 0, z: 0}
+  _leftLegVector: {x: 0, y: 0, z: 0}
