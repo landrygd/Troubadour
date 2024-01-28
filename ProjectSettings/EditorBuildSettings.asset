@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Lo\xEFc/main menu.unity"
-    guid: 8c7c71788b2382a4da96581ed2a5db5a
+    path: Assets/Main/Scenes/MainMenu.unity
+    guid: 4aef4e9917c39dd46805614fa0180916
   - enabled: 1
-    path: "Assets/Scenes/Lo\xEFc.unity"
-    guid: 3346cafbfec0bd345a12f80166fdbf0f
+    path: Assets/Main/Scenes/MainScene.unity
+    guid: 73685edecd631944ea0d8eafd293ae4e
   - enabled: 1
-    path: "Assets/Lo\xEFc/game over.unity"
-    guid: 82c076ef0af95014f91295902da30363
+    path: Assets/Main/Scenes/GameOver.unity
+    guid: fb65f7f9ceac68e40a92a4d1b6d34a59
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8b3b96c1091790741b7a2938e9171015, type: 2}
